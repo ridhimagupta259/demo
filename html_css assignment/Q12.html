@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+
+
+#a h2{
+
+background-color:lightgrey;
+text-transform:uppercase;
+color: white;
+font-size: 18px;
+padding :20px;
+margin:-15px -15px 30px -15px;
+border-radius:15px 15px 0px 0px;
+
+}
+
+
+header
+{
+color:seagreen;
+height 60px;
+}
+ul{
+list-style-type: none;
+margin-right:10px;
+margin-top:-50px;
+
+}
+li{ display: inline-block;
+}
+li a{text-decoration: none;
+margin:10px;
+}
+#de
+{ float:right;
+}
+.myForm {
+font-family: "Lucida Sans Unicode", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+margin-left:400px;
+border-radius:15px;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+font-weight: bold;
+}
+
+.myForm input[type="text"],
+.myForm select,
+.myForm textarea {
+
+ width:100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"]{
+margin-left: 10%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background-color: aqua;
+border: none;
+font-weight: bold;
+margin-left: 80%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background-color: aqua;
+cursor: pointer;
+}
+ 
+  .myForm select
+  {
+background-color:seagreen;
+  }
+ 
+</style>
+
+</head>
+<body>
+
+
+<header>
+<h1>TO THE NEW</h1>
+<nav id="de">
+<ul>
+<li><a >Home</a></li>
+<li><a >Quick Help</a></li>
+</ul>
+</nav>
+</header>
+<hr>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<div id="a">
+<h2>Bug Report</h2></div>
+
+<p>
+  <label>Title</label>
+<input type="text" name="Title" required>
+
+</p>
+
+
+<p>
+  <label>Description </label>
+<textarea name="comments" maxlength="500"></textarea>
+
+</p>
+
+<p>
+<label>Operating System</label>
+<select id="os" name="os">
+<option value="" selected="selected">Select One</option>
+<option value="xp" >Windows XP</option>
+<option value="10" >Windows 10</option>
+<option value="linux" >Linux</option>
+</select>
+
+</p>
+<p>
+<label>Product</label>
+<select id="product" name="product">
+<option value="" selected="selected">Select One</option>
+<option value="DEll" >Dell</option>
+<option value="Lenovo" >Lenovo</option>
+<option value="HP" >HP</option>
+</select>
+
+</p>
+<p>
+  <label>Version</label>
+<input type="text" name="version" required>
+
+</p>
+
+<fieldset>
+  <label>License</label>
+<p><label class="choice"> <input type="radio" name="free" required value="free"> Free </label></p>
+<p><label class="choice"> <input type="radio" name="business" required value="business"> Business </label></p>
+</fieldset>
+
+
+<p>
+<label>Severity</label>
+<select id="severity" name="severity">
+<option value="" selected="selected">Select One</option>
+<option value="critical" >Critical</option>
+<option value="high" >High</option>
+<option value="low" >Low</option>
+</select>
+
+</p>
+
+<p>
+<label for="fileupload"> Attachments</label>
+<input type="file" name="fileupload" value="fileupload" id="fileupload"> 
+  </p>
+
+
+
+<p><button style="background-color:seagreen">Send</button></p>
+
+</form>
+
+</body>
+</html>
